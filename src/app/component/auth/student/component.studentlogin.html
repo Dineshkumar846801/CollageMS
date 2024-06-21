@@ -23,6 +23,7 @@
                       type="email"
                       id="form2Example18"
                       class="form-control form-control-lg"
+                      [formControl]="userId"
                     />
                     <label
                       class="form-label"
@@ -75,9 +76,10 @@
                     </button> -->
                     <a
                       class="btn btn-primary btn-lg rounded-0"
-                      href="/student-login/student-dashboard"
+                      [routerLink]="['/student-dashboard/',userId.value]"
                       type="button"
                       data-mdb-button-initialized="true"
+                      (click)="loggedInUserDetails()"
                     >
                       Login
                     </a>

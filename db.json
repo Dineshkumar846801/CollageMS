@@ -1,0 +1,162 @@
+{
+  "student": [
+    {
+      "id": 2392,
+      "password": "pass@123"
+    },
+    {
+      "id": 7538,
+      "password": "pass@123"
+    },
+    {
+      "id": 3707,
+      "password": "pass@123"
+    },
+    {
+      "id": 8498,
+      "password": "pass@123"
+    },
+    {
+      "id": 2441,
+      "password": "pass@123"
+    }
+  ],
+
+  "student-dashboard": [
+    {
+      "student_id": 2392,
+      "first_name": "Sam",
+      "last_name": "Smith",
+      "date_of_birth": "2001-09-10",
+      "email": "sam.smith@example.com",
+      "phone": "+1122334455",
+      "address": {
+        "street": "789 Elm Street",
+        "city": "Springfield",
+        "state": "IL",
+        "zip": "67890",
+        "country": "USA"
+      },
+      "courses": [
+        {
+          "course_id": 101,
+          "course_name": "Mathematics",
+          "grade": "B"
+        },
+        {
+          "course_id": 102,
+          "course_name": "Science",
+          "grade": "A-"
+        }
+      ]
+    },
+    {
+      "student_id": 7538,
+      "first_name": "Sam",
+      "last_name": "Jones",
+      "date_of_birth": "2002-03-25",
+      "email": "sam.jones@example.com",
+      "phone": "+9988776655",
+      "address": {
+        "street": "456 Pine Avenue",
+        "city": "Greenville",
+        "state": "NC",
+        "zip": "54321",
+        "country": "USA"
+      },
+      "courses": [
+        {
+          "course_id": 103,
+          "course_name": "History",
+          "grade": "A"
+        },
+        {
+          "course_id": 104,
+          "course_name": "English",
+          "grade": "B+"
+        }
+      ]
+    },
+    {
+      "student_id": 3707,
+      "first_name": "Sam",
+      "last_name": "Brown",
+      "date_of_birth": "2003-07-15",
+      "email": "sam.brown@example.com",
+      "phone": "+1122334455",
+      "address": {
+        "street": "123 Oak Lane",
+        "city": "Bristol",
+        "state": "TN",
+        "zip": "12345",
+        "country": "USA"
+      },
+      "courses": [
+        {
+          "course_id": 105,
+          "course_name": "Physics",
+          "grade": "A-"
+        },
+        {
+          "course_id": 106,
+          "course_name": "Chemistry",
+          "grade": "A"
+        }
+      ]
+    },
+    {
+      "student_id": 8498,
+      "first_name": "Sam",
+      "last_name": "Wilson",
+      "date_of_birth": "2004-01-05",
+      "email": "sam.wilson@example.com",
+      "phone": "+9988776655",
+      "address": {
+        "street": "789 Maple Street",
+        "city": "Raleigh",
+        "state": "NC",
+        "zip": "67890",
+        "country": "USA"
+      },
+      "courses": [
+        {
+          "course_id": 107,
+          "course_name": "Biology",
+          "grade": "B+"
+        },
+        {
+          "course_id": 108,
+          "course_name": "Geography",
+          "grade": "A"
+        }
+      ]
+    },
+    {
+      "student_id": 2441,
+      "first_name": "Sam",
+      "last_name": "Lee",
+      "date_of_birth": "2005-05-20",
+      "email": "sam.lee@example.com",
+      "phone": "+1122334455",
+      "address": {
+        "street": "456 Walnut Avenue",
+        "city": "Charleston",
+        "state": "SC",
+        "zip": "54321",
+        "country": "USA"
+      },
+      "courses": [
+        {
+          "course_id": 109,
+          "course_name": "Computer Science",
+          "grade": "A"
+        },
+        {
+          "course_id": 110,
+          "course_name": "Art",
+          "grade": "B"
+        }
+      ]
+    }
+  ]
+}
