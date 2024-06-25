@@ -24,7 +24,8 @@
 
   "student-dashboard": [
     {
-      "student_id": 2392,
+      "id": 2392,
+      "profile": "https://www.electricallicenserenewal.com/app-assets/images/user/12.jpg",
       "first_name": "Sam",
       "last_name": "Smith",
       "date_of_birth": "2001-09-10",
@@ -51,7 +52,8 @@
       ]
     },
     {
-      "student_id": 7538,
+      "id": 7538,
+      "profile": "https://gesla.lk/wp-content/uploads/2015/03/team-member-5.jpg",
       "first_name": "Sam",
       "last_name": "Jones",
       "date_of_birth": "2002-03-25",
@@ -78,7 +80,8 @@
       ]
     },
     {
-      "student_id": 3707,
+      "id": 3707,
+      "profile": "https://cloudcommercepro.com/wp-content/uploads/2022/06/dummy-customer.jpg",
       "first_name": "Sam",
       "last_name": "Brown",
       "date_of_birth": "2003-07-15",
@@ -105,7 +108,8 @@
       ]
     },
     {
-      "student_id": 8498,
+      "id": 8498,
+      "profile": "https://pics.craiyon.com/2023-11-12/8vNnyDyFSwmLECNw1KCjfw.webp",
       "first_name": "Sam",
       "last_name": "Wilson",
       "date_of_birth": "2004-01-05",
@@ -132,7 +136,8 @@
       ]
     },
     {
-      "student_id": 2441,
+      "id": 2441,
+      "profile": "https://gesla.lk/wp-content/uploads/2015/03/team-member-5.jpg",
       "first_name": "Sam",
       "last_name": "Lee",
       "date_of_birth": "2005-05-20",

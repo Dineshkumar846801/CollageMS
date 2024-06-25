@@ -1,2 +1,41 @@
-<h5>Student Dashboard</h5>
-<h5>{{auths[0].password}}</h5>
+<div style="display: flex">
+  <div>
+    <sidebar-comp></sidebar-comp>
+  </div>
+  <div>
+    <navbar-comp [profile_photo]="loggedUser"></navbar-comp>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-9">
+          <div class="card grad-blue">
+            <div class="card-header">
+              <div class="card-body py-2 px-4 text-light">
+                <h5 class="card-title my-2">Date</h5>
+
+                <h3 class="mt-5">Welcome back, {{loggedUser?.first_name}}</h3>
+                <p>you've finished 85% of our weekly goals!</p>
+                <img
+                  class="graducation-cap hide-bg"
+                  src="https://img.freepik.com/free-vector/student-graduation-cap-with-gold-tassel-ribbon_107791-16542.jpg?t=st=1719349326~exp=1719352926~hmac=2eb2ca031f41014584287b6297e714fe1bebd3fe4e867eafdac284c156368b84&w=1380"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <h5>Student Dashboard</h5>
+
+    <h5>Hello {{loggedUser| json}}</h5>
+
+    <!-- dashboarsd -->
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col"></div>
+      </div>
+    </div>
+    <!-- dashboarsd -->
+  </div>
+</div>

@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { AuthUserServices } from '../../services/authuserservices';
-import { AuthUserMV } from '../../modules/authuserVM';
-import { HttpClient } from '@angular/common/http';
+import { StudentDashboardServices } from '../../services/studentdashboardservices';
+import { StudentDashboardVM } from '../../modules/studentdashboardVM';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   templateUrl: './student.dashboard.html',
@@ -9,21 +9,30 @@ import { HttpClient } from '@angular/common/http';
   styleUrls: ['./student.dashboard.css'],
 })
 export class StudentDashboard implements OnInit {
-  auths: AuthUserMV[] = [];
+  users: StudentDashboardVM[] = [];
+  loggedUser: StudentDashboardVM | null = null;
   constructor(
-    private authServices: AuthUserServices,
-    private httpClient: HttpClient
+    private studentDashboardServices: StudentDashboardServices,
+    private acitvatedRoute: ActivatedRoute
   ) {}
 
-  fetchAuth() {
-    this.authServices.fatch().subscribe({
-      next: (_auths) => {
-        this.auths = _auths as AuthUserMV[];
+  loadUserDashboard() {
+    this.studentDashboardServices.fatch().subscribe({
+      next: (_users) => {
+        for (let i = 0; i < _users.length; i++) {
+          if (_users[i].id === this.acitvatedRoute.snapshot.params['id']) {
+            this.loggedUser = _users[i];
+          }
+        }
       },
     });
   }
 
+  findUserLoggedIn() {}
+
   ngOnInit(): void {
-    this.fetchAuth();
+    this.loadUserDashboard();
+    this.findUserLoggedIn();
+    console.log(this.loggedUser);
   }
 }

@@ -12,6 +12,9 @@ import { NotFound } from './component/error/notfound/pagenotfound';
 import { AuthUserServices } from './component/services/authuserservices';
 import { HttpClientModule } from '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
+import { StudentDashboardServices } from './component/services/studentdashboardservices';
+import { SidebarComponent } from './component/layout/sidebar/sidebar.component';
+import { NavbarComponent } from './component/layout/navbar/navbar.component';
 export const routes: Routes = [
   { path: '', redirectTo: '/index-page', pathMatch: 'full' },
   { path: 'index-page', component: IndexComponent },
@@ -24,11 +27,14 @@ export const routes: Routes = [
 @NgModule({
   declarations: [
     AppComponent,
+
     IndexComponent,
     StudentLogin,
     TeacherLogin,
     StudentDashboard,
     TeacherDashboard,
+    SidebarComponent,
+    NavbarComponent,
   ],
   imports: [
     BrowserModule,
@@ -36,7 +42,7 @@ export const routes: Routes = [
     ReactiveFormsModule,
     RouterModule.forRoot(routes),
   ],
-  providers: [AuthUserServices],
+  providers: [AuthUserServices, StudentDashboardServices],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

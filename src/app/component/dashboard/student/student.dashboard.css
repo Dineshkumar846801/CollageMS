@@ -1,0 +1,20 @@
+.grad-blue {
+  background-image: linear-gradient(
+    to bottom right,
+    rgb(34, 31, 223),
+    rgb(0, 128, 255)
+  );
+}
+
+.hide-bg {
+  mix-blend-mode: multiply;
+  filter: contrast(4);
+}
+
+.graducation-cap {
+  height: 250px;
+  position: absolute;
+  top: -13%;
+  right: 10%;
+  transform: rotate(45deg);
+}
